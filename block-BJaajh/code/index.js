@@ -1,23 +1,25 @@
 function checkFive(num) {
-    let result = '';
+    let result = "";
     if (num < 5) {
-        result = num + ' is less than 5.';
+        result = num + " is less than 5.";
     } else if (num === 5) {
-        result = num + ' is equal to 5.';
+        result = num + " is equal to 5.";
     } else {
-        result = num + ' is greater than 5.';
+        result = num + " is greater than 5.";
     }
     return result;
 }
 
-function getWinner(guest1, guest2) {
-    if (guest1 === guest2) {
+
+
+function getWinner(guess1, guess2) {
+    if (guess1 === guess2) {
         return "TIE";
-    } else if (guest1 === "Paper" && guest2 === "Rock") {
+    } else if (guess1 === "Paper" && guess2 === "Rock") {
         return "Player 1 wins!";
-    } else if (guest1 === "Scissor" && guest2 === "Paper") {
+    } else if (guess1 === "Scissor" && guess2 === "Paper") {
         return "`Player 1 wins!";
-    } else if (guest1 === "Rock " && guest2 === "Scissors") {
+    } else if (guess1 === "Rock " && guess2 === "Scissors") {
         return "Player 1 wins";
     } else {
         return "Player 2 wins!";
