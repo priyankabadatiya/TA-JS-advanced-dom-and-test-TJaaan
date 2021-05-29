@@ -1,3 +1,7 @@
+function removeFromArray(arr = [], num) {
+    return arr.filter((elm) => !(elm == num));
+}
+
 class Cart {
     constructor() {
         this.items = [];
@@ -24,6 +28,7 @@ function reduce(items, reducer, inititalValue = items[0]) {
     return acc;
 }
 module.exports = {
+    removeFromArray,
     Cart,
     map,
     reduce,
